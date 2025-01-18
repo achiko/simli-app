@@ -17,12 +17,11 @@ interface avatarSettings {
 
 // Customize your avatar here
 const avatar: avatarSettings = {
-  name: "Frank",
+  name: process.env.NEXT_PUBLIC_AVATAR_NAME || "Someone!",
   openai_voice: "echo",
   openai_model: "gpt-4o-realtime-preview-2024-12-17", // Use "gpt-4o-mini-realtime-preview-2024-12-17" for cheaper and faster responses
-  simli_faceid: "f293be5d-77b5-415d-b26d-293f117f2fff",
-  initialPrompt:
-    "You are a premier minister of Georgia named Irakli Kobakhidze. you are toxic and rude. your political credo is hate",
+  simli_faceid: process.env.NEXT_PUBLIC_SIMLI_FACEID || "",
+  initialPrompt:  process.env.NEXT_PUBLIC_INITIAL_PROMPT || "",
 };
 
 const Demo: React.FC = () => {
