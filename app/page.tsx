@@ -42,7 +42,7 @@ const Demo: React.FC = () => {
       <SimliHeaderLogo />
       <Navbar />
       <div className="absolute top-[32px] right-[32px]">
-        <text
+        {/* <text
           onClick={() => {
             window.open("https://github.com/simliai/create-simli-app-openai");
           }}
@@ -50,7 +50,7 @@ const Demo: React.FC = () => {
         >
           <Image className="w-[20px] inline mr-2" src={GitHubLogo} alt="" />
           create-simli-app (OpenAI)
-        </text>
+        </text> */}
       </div>
       <div className="flex flex-col items-center gap-6 bg-effect15White p-6 pb-[40px] rounded-xl w-full">
         <div>
@@ -68,7 +68,8 @@ const Demo: React.FC = () => {
       </div>
 
       <div className="max-w-[350px] font-thin flex flex-col items-center ">
-        <span className="font-bold mb-[8px] leading-5 ">
+        <h1>Irakli Kobakhidze Media </h1>
+        {/* <span className="font-bold mb-[8px] leading-5 ">
           {" "}
           Create Simli App is a starter repo for creating visual avatars with
           Simli{" "}
@@ -89,7 +90,7 @@ const Demo: React.FC = () => {
         <span className=" mt-[16px]">
           You can now deploy this app to Vercel, or incorporate it as part of
           your existing project.
-        </span>
+        </span> */}
       </div>
     </div>
   );
